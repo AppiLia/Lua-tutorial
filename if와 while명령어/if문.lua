@@ -22,3 +22,16 @@ else
     print('zero')
 end
 
+io.write('혈중알콜농도(측정거부시 -1을 입력):')
+local d = tonumber(io.read())
+if d == -1 then
+    print('1년~5년 이하 징역')
+elseif d<0.03 then
+    print('처벌 없음')
+elseif d<=0.08 then
+    print('1년 이하 징역')
+elseif d<=0.2 then
+    print('1년~2년이하 징역')
+else
+    print('2년~5년 이하 징역')
+end
