@@ -12,4 +12,6 @@ local function sub(a,b)
     return s
 end
 
-return {add,sub}
+local t = {add=add,sub=sub,pi=3.1415}
+--key(add)-value(함수add)
+return t
